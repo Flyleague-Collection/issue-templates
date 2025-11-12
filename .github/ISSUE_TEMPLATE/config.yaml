@@ -1,4 +1,4 @@
-blank_issues_enabled: true
+﻿blank_issues_enabled: true
 contact_links:
   - name: "📚 查阅文档"
     url: "https://github.com/Flyleague-Collection/Operating-document"
@@ -6,6 +6,3 @@ contact_links:
   - name: "💬 社区讨论"
     url: "https://github.com/orgs/Flyleague-Collection/discussions"
     about: "欢迎在这里提出想法和问题"
-  - name: "🐛 发现安全漏洞"
-    url: "mailto:support@apocfly.com"
-    about: "请勿公开报告安全问题，请通过邮件联系"
