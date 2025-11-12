@@ -2,8 +2,6 @@
 description: "报告一个可复现的错误或问题"
 title: "[Bug]: "
 labels: ["bug", "triage"]
-assignees:
-  - supermastergui
 body:
   - type: markdown
     attributes:
