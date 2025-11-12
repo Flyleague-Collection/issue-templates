@@ -1,0 +1,89 @@
+name: " Bug 报告"
+description: "报告一个可复现的错误或问题"
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+assignees:
+  - supermastergui
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您提交错误报告！请提供详细的信息以便我们快速定位和解决问题。
+        
+        **在提交前请确认：**
+        - [ ] 我已经搜索过现有的Issue，没有找到相同问题
+        - [ ] 我已在最新版本中验证此问题仍然存在
+
+  - type: input
+    id: version
+    attributes:
+      label: "版本信息"
+      description: "您使用的项目版本、Commit Hash或发布日期"
+      placeholder: "例如：v2.1.0 或 a1b2c3d"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "环境类型"
+      description: "选择问题发生的环境"
+      multiple: true
+      options:
+        - "开发环境"
+        - "测试环境"
+        - "生产环境"
+        - "本地环境"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: "操作系统"
+      description: "操作系统和版本号"
+      placeholder: "例如：Windows 11 22H2, Ubuntu 22.04, macOS 14.0"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "复现步骤"
+      description: "清晰描述如何复现这个问题"
+      placeholder: |
+        1. 进入 '...'
+        2. 点击 '....'
+        3. 滚动到 '....'
+        4. 看到错误
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "预期行为"
+      description: "您期望发生什么？"
+      placeholder: "清晰简洁地描述您期望的结果"
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "实际行为"
+      description: "实际发生了什么？"
+      placeholder: "清晰简洁地描述实际发生的结果"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "相关日志/截图"
+      description: "如果有错误日志、控制台输出或截图，请在此提供"
+      render: shell
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "补充信息"
+      description: "任何其他有助于理解问题的信息"
